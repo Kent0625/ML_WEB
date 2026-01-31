@@ -1,0 +1,8 @@
+services:
+  - type: static
+    name: metric-master
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    plan: free
+    autoDeploy: true
