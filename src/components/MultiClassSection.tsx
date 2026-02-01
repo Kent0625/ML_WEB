@@ -105,7 +105,7 @@ export default function MultiClassSection() {
                      <span className={cn("px-2 py-0.5 rounded text-sm font-medium", colors[i])}>{m.label} Stats</span>
                      <span className="font-mono text-sm text-slate-400">F1: {formatPercent(m.f1)}</span>
                    </div>
-                   <div className="grid grid-cols-3 gap-2 text-center text-sm">
+                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-sm">
                       <div className="p-2 bg-slate-50 dark:bg-slate-800 rounded">
                         <div className="text-xs text-slate-400">Precision</div>
                         <div className="font-semibold">{formatPercent(m.precision)}</div>
@@ -113,6 +113,10 @@ export default function MultiClassSection() {
                       <div className="p-2 bg-slate-50 dark:bg-slate-800 rounded">
                         <div className="text-xs text-slate-400">Recall</div>
                         <div className="font-semibold">{formatPercent(m.recall)}</div>
+                      </div>
+                      <div className="p-2 bg-slate-50 dark:bg-slate-800 rounded">
+                        <div className="text-xs text-slate-400">Specificity</div>
+                        <div className="font-semibold">{formatPercent(m.specificity)}</div>
                       </div>
                       <div className="p-2 bg-slate-100 dark:bg-slate-700 rounded font-medium text-slate-900 dark:text-slate-100">
                         <div className="text-xs text-slate-500 dark:text-slate-400">Class F1</div>
